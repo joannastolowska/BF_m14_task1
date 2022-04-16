@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -223,24 +224,25 @@ padding-right: 10%;
     width: 412px;
     height: 358px;
     background: #0E204E;
-    overflow: hidden;
     position: absolute;
     right: -205px;
     top: 112px;
+    z-index: -1;
 }
 
 .offers-photo {
     position: relative;
+    z-index: 0;
 }
 
 .offers-rectangle-two {
     width: 412px;
     height: 358px;
     background: #0E204E;
-    overflow: hidden;
     position: absolute;
     left: -205px;
     top: 112px;
+    z-index: -1;
 }
 
 .offers {
@@ -252,6 +254,210 @@ padding-right: 10%;
     font-size: 60px;
     font-weight: 700;
     color: #0E204E;
-    padding-bottom: 7%;
-
+    padding-bottom: 2%;
 }
+
+.gallery-subtitle {
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 20px;
+    color: #263238;
+    padding-bottom: 2%;
+}
+
+.gallery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.features, .agent {
+    padding: 12% 15% 5% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-rectangle {
+    width: 400px;
+    height: 445px;
+    background: #0E204E;
+    position: absolute;
+    top: 140px;
+    left: 284px;
+    z-index: -1;
+}
+
+.features-photo {
+    position: relative;
+    z-index: 0;
+}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.features-title {
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 700;
+    color: #0E204E;
+    padding-bottom: 3%;
+}
+
+.features-subtitle {
+    font-family: 'Raleway';
+    font-size: 20px;
+    line-height: 19px;
+    color: #030033;   
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 3%;
+}
+
+.list:nth-child(odd) {
+    background: rgba(14, 63, 51, 0.2);
+}
+
+.list:nth-child(even) {
+    padding: 5% 3%;
+}
+
+.agent-rectangle {
+    width: 400px;
+    height: 445px;
+    background: #0E204E;
+    position: absolute;
+    top: 140px;
+    right: 352px;
+    z-index: -1;
+}
+
+.agent-photo {
+    position: relative;
+    z-index: 0;
+}
+
+.agent-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 30%;
+    padding-top: 12%;
+}
+
+.agent-title {
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 700;
+    color: #0E204E;
+    padding-bottom: 5%;
+}
+
+.agent-subtitle {
+    font-family: 'Manrope';
+    font-size: 20px;
+    line-height: 150%;
+    color: #263238;
+    padding-bottom: 10%;
+}
+
+.agent-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0E204E;
+    width: 239px;
+    height: 62px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.agent-button:hover {
+    color: #0E204E;
+    background: #FFFFFF;
+    border: 3px solid #0E204E;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#name, #phone, #email, #message {
+    border: 1px solid #2D2B2B;
+    width: 909px;
+    height: 65px;
+    margin: 2%;
+    padding-left: 3%;
+}
+
+#message {
+    padding-bottom: 24%;
+}
+.form-title {
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 700;
+    color: #0E204E;
+    padding-bottom: 1%;
+}
+
+.form-subtitle {
+    font-family: 'Manrope';
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 2%;
+}
+
+.button {
+    background: #0E204E;
+    width: 141px;
+    height: 48px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("assets/img/rectangle_bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-footer {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.h3 {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+    }
+
+.h5 {
+     font-family: 'Manrope';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
